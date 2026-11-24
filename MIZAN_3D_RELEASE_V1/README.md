@@ -1,6 +1,6 @@
 # MIZAN 3D — V1.0
 
-Spatial Asset & Financial Intelligence. Created by Mohd Khairul Ridhuan with AI-assisted development.
+Spatial Asset & Financial Intelligence. Created by Mohd Khairul Ridhuan bin Mohd Fadzil — Researcher & Project Developer. AI-assisted development.
 
 Frozen Phase 3 release: architectural exploration, 16 linked assets and financial scenario tools. Maintenance, Procurement and Budget navigation is hidden; underlying source is retained for future work. No new functional modules were introduced.
 
