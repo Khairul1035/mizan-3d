@@ -1,0 +1,12 @@
+// Schema-first demonstration data. No real institution, personal data or measured costs.
+import {assets} from './asset-data.js';
+export const project = Object.freeze({id:'MZN-CONCEPT-001',name:'Al-Mizan Mosque',phase:3,fictional:true,units:'conceptual metres',currency:'MYR'});
+export const modeDefinitions = {
+  Assets:{title:'Asset intelligence',description:'Connect a physical component to its lifecycle record.',planned:['Raycast asset selection and unique IDs','Acquisition, warranty and inspection records','Maintenance history and responsible roles']},
+  Costs:{title:'Financial intelligence',description:'Understand costs through explicit, editable assumptions.',planned:['Electricity and water cost scenarios','Maintenance and replacement assumptions','Baseline vs alternative savings and payback']},
+  Maintenance:{title:'Maintenance planning',description:'Inspect service requirements in their spatial context.',planned:['Due dates and configurable inspection status','Estimated work costs and component links','Transparent incomplete-record flags']},
+  Procurement:{title:'Procurement oversight',description:'Follow a work package from approval to payment.',planned:['Contract amount, paid amount and balance','Document reference placeholders','Responsible officer and component links']},
+  Budget:{title:'Budget decisions',description:'Explore trade-offs within an illustrative RM30,000 allocation.',planned:['Five selectable project options','Allocation, remaining balance and overruns','Illustrative service and risk implications']}
+};
+export const assetSchema = Object.freeze({id:'string',componentId:'string',name:'string',category:'string',location:'string',acquisitionCost:'number (MYR)',acquisitionDate:'ISO date',usefulLifeYears:'number',annualOperatingCost:'number (MYR/year, estimate)',warrantyStatus:'string',maintenanceHistory:'array',nextMaintenanceDate:'ISO date',responsibleRole:'string',inspectionStatus:'string',fictional:'boolean'});
+export const dataStore = {assets,maintenance:[],procurement:[],financialAssumptions:[],budgetProjects:[{id:'roof',name:'Roof repair',cost:12000,componentId:'roof'},{id:'ac',name:'Air conditioning replacement',cost:18000,componentId:'services'},{id:'water',name:'Ablution and toilet repair',cost:10000,componentId:'ablution'},{id:'cctv',name:'CCTV upgrade',cost:8000,componentId:'services'},{id:'hall',name:'Prayer hall refurbishment',cost:7000,componentId:'interior'}]};
